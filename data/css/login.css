@@ -1,0 +1,58 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(89, 212, 85);
+    color: #38414A;
+    padding: 20px;
+    margin-top: 0px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-image {
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    width: 200px;
+}
+
+#loginForm {
+    font-size: 2ex;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 3ex;
+        flex-direction: row;
+    }
+
+    .header-image {
+        top: 50%;
+        right: 15%;
+        width: 150px;
+        max-width: 200px;
+    }
+
+    #loginForm {
+        flex-direction: column;
+    }
+    #loginForm label, 
+    #loginForm input {
+        margin-bottom: 10px;
+    }
+    #loginButton {
+        align-self: flex-end;
+    }
+}

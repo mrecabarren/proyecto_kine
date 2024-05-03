@@ -1,0 +1,43 @@
+<!-- result.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Prototipo</title>
+    <link rel="stylesheet" href="css/result.css">
+    <script src="lib/chroma.min.js"></script>
+</head>
+<body>
+    <h1>Resultado<img src="img/uandes_logo.png" class="header-image"></h1>
+    <div class="heatmap">
+        <object id="svg" data="img/via_respiratoria2.svg" type="image/svg+xml" class="heatmap"></object>
+    </div>
+    
+    <div class="results-table">
+        <table>
+            <tr>
+                <th>Sección</th>
+                <th>Tiempo (s)</th>
+            </tr>
+            <tr>
+                <td>Nariz</td>
+                <td id="resultData0"></td>
+            </tr>
+            <tr>
+                <td>Nasofaringe</td>
+                <td id="resultData1"></td>
+            </tr>
+            <tr>
+                <td>Orofaringe</td>
+                <td id="resultData2"></td>
+            </tr>
+            <tr>
+                <td>Laringofaringe</td>
+                <td id="resultData3"></td>
+            </tr>
+        </table>
+    </div>
+    <script src="js/result.js"></script>
+</body>
+</html>
